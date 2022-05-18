@@ -1,0 +1,49 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    @apply p-0 m-0 bg-white min-h-screen;
+}
+
+a {
+  @apply text-inherit	no-underline;
+}
+
+* {
+  @apply box-border;
+}
+.next--app {
+  /* display: flex; */
+  @apply flex relative;
+}
+.main {
+  position: relative;
+}
+.menu__header--li .active {
+  color: #1355fe;
+}
+.header__menu--li--icon {
+  font-size: 20px;
+}
+.menu__header--li:hover {
+  color: #1355fe;
+}
+.list--freinds--cell {
+  @apply border-b border-inherit px-6 py-6;
+}
+
+.scroll--none::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+
+.bg--img {
+  transform: rotate(-90deg);
+  left: -143px;
+  top: 200px;
+  pointer-events: none;
+}
